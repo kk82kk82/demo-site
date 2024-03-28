@@ -316,19 +316,19 @@
 </div>	
 </section>
 	
-<div class="modal fade" id="" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Label"></h5>
+        <h5 class="modal-title" id="Label">bnnvnvbn</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        
+       <h1>Tital</h1>
+       <div class="text-small">sdsdsdss dsdsdsd</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLose</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -755,6 +755,27 @@ xrotate-1
 <script src="assets/js/color-modes.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script type="text/javascript">
 
+  $(document).ready(function(){
+     $('#modal-popup01').modal('show');
+      $('#modal-popup01').removeClass('fade').addClass('fade-in');
+
+      $('#modal-popup01').on('hidden.bs.modal', function () {
+          $('#myModal').modal('show');
+          $('#myModal').removeClass('fade').addClass('fade-in');
+      });
+
+/*      jQuery('#MyPopup').on('hidden.bs.modal', function () {
+          var video = jQuery("#yt-player").attr("src");
+          jQuery("#yt-player").attr("src","");
+          jQuery("#yt-player").attr("src",video);
+          jQuery('#MyPopup1').modal('show');
+          jQuery('#MyPopup1').removeClass('fade').addClass('fade-in');
+      });*/
+//     jQuery('#MyPopup').modal('show');
+
+   });
+</script>
 </body>
 </html>
